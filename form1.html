@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Enquiry Form</legend>
+
+      <h3>Welcome to Akand Tech Company</h3>
+
+      <form action="" method="">
+        <label>Gender</label><br />
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="other" /> Other <br />
+
+        <label>Course</label><br />
+        <input type="checkbox" value="php" /> PHP
+        <input type="checkbox" value="java" /> Java
+        <input type="checkbox" value="python" /> Python
+        <input type="checkbox" value="javascript" /> JavaScript <br />
+        <br />
+
+        <label>Country</label><br />
+        <select name="country">
+          <option>...Select Country...</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="India">India</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Nepal">Nepal</option>
+          <br /></select
+        ><br /><br />
+
+        <label>Top Courses</label>
+
+        <select>
+          <option>Frontend or Backend</option>
+          <optgroup label="Frontend">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+          </optgroup>
+          <optgroup label="Backend">
+            <option>PHP</option>
+            <option>Java</option>
+            <option>Python</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+
+        <label>Name</label><br />
+        <input
+          type="text"
+          pattern="[A-Za-z ]{3,40}"
+          title="Name must be 3-40 characters long and can only contain letters and spaces"
+          name="uname"
+          placeholder="Enter Your Name"
+        /><br />
+
+        <label>Email</label><br />
+        <input
+          type="email"
+          name="uemail"
+          placeholder="Enter Your Email"
+        /><br />
+
+        <label>Phone</label><br />
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{6}"
+          title="formate: 123-45-678901"
+          name="uphone"
+          placeholder="Enter Your Phone Number"
+        /><br />
+
+        <label>Message</label><br />
+        <textarea
+          name="umessage"
+          rows="5"
+          cols="30"
+          placeholder="Enter Your Message"
+        ></textarea
+        ><br />
+
+        <label>Photo</label>
+        <br />
+        <input
+          type="file"
+          name="uphoto"
+          accept=".jpg, .jpeg, .png, .gif"
+        /><br />
+
+        <label>Password</label><br />
+        <input
+          type="password"
+          name="upassword"
+          placeholder="Enter Your Password"
+        /><br />
+
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset" />
+      </form>
+    </fieldset>
+  </body>
+</html>

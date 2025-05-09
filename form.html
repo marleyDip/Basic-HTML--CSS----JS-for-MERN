@@ -3,88 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>HTML 5 Form</title>
   </head>
   <body>
     <fieldset>
-      <legend>Enquiry Form</legend>
+      <legend>HTML 5 Form Input</legend>
 
-      <h3>Welcome to Akand Tech Company</h3>
-
-      <form action="" method="">
-        <label>Gender</label><br />
-        <input type="radio" name="gender" value="male" /> Male
-        <input type="radio" name="gender" value="female" /> Female
-        <input type="radio" name="gender" value="other" /> Other <br />
-
-        <label>Course</label><br />
-        <input type="checkbox" value="php" /> PHP
-        <input type="checkbox" value="java" /> Java
-        <input type="checkbox" value="python" /> Python
-        <input type="checkbox" value="javascript" /> JavaScript <br />
-        <br />
-
-        <label>Country</label><br />
-        <select name="country">
-          <option>...Select Country...</option>
-          <option value="Bangladesh">Bangladesh</option>
-          <option value="India">India</option>
-          <option value="Pakistan">Pakistan</option>
-          <option value="Nepal">Nepal</option>
-          <br /></select
+      <form>
+        <input type="text" list="course" />
+        <datalist id="course">
+          <option value="PHP" />
+          <option value="Java" />
+          <option value="C" />
+          <option value="C++" />
+          <option value="JS" /></datalist
         ><br /><br />
-
-        <label>Name</label><br />
-        <input
-          type="text"
-          pattern="[A-Za-z ]{3,40}"
-          title="Name must be 3-40 characters long and can only contain letters and spaces"
-          name="uname"
-          placeholder="Enter Your Name"
-        /><br />
-
-        <label>Email</label><br />
-        <input
-          type="email"
-          name="uemail"
-          placeholder="Enter Your Email"
-        /><br />
-
-        <label>Phone</label><br />
-        <input
-          type="tel"
-          pattern="[0-9]{3}-[0-9]{2}-[0-9]{6}"
-          title="formate: 123-45-678901"
-          name="uphone"
-          placeholder="Enter Your Phone Number"
-        /><br />
-
-        <label>Message</label><br />
-        <textarea
-          name="umessage"
-          rows="5"
-          cols="30"
-          placeholder="Enter Your Message"
-        ></textarea
-        ><br />
-
-        <label>Photo</label>
+        Name
+        <input type="text" required minlength="5" maxlength="15" name="" />
         <br />
-        <input
-          type="file"
-          name="uphoto"
-          accept=".jpg, .jpeg, .png, .gif"
-        /><br />
+        <br />
+        Qty <input type="number" min="1" max="10" value="5" /> <br />
+        <br />
 
-        <label>Password</label><br />
-        <input
-          type="password"
-          name="upassword"
-          placeholder="Enter Your Password"
-        /><br />
+        Date <input type="date" /> <br />
+        <br />
 
-        <button type="submit">Submit</button>
-        <input type="reset" value="Reset" />
+        Time <input type="time" /> <br />
+        <br />
+
+        Week <input type="week" /> <br />
+        <br />
+
+        Month <input type="month" /> <br />
+        <br />
+
+        Color <input type="color" /> <br />
+        <br />
+
+        URL <input type="url" /> <br />
+        <br />
+
+        Range <input type="range" /> <br />
+        <br />
+
+        <button>Save</button>
+        <input type="reset" value="reset" />
+        <button type="reset">Reset</button>
+
+        <button type="button">Save</button>
       </form>
     </fieldset>
   </body>
