@@ -1,0 +1,45 @@
+.project-section {
+    width: 100%;
+   padding-bottom: 10px;
+    background: #f2f2ec;
+}
+.project-section-mid {
+    width: 1320px;
+    margin: auto;
+}
+.project-items-outer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;   
+}
+.project-items {
+    width: 18%;
+    margin: 1%;
+    text-align: center;
+    background: white;
+    padding: 5px 0px;
+}
+.project-items img {
+    width: 50px;
+}
+.project-section-mid h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+.flexexample {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+
+.flexItems {
+    background: purple;
+    color: white;
+    margin: 10px;
+    width: 500px;
+}
