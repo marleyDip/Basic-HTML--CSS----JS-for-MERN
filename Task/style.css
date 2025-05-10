@@ -3,3 +3,33 @@
     height: 540px;
     background-color: tomato;
 }
+
+/* default 1 em = 16px */
+/* .main = font-size: 10px; s*/
+/* but for parent declare font size, 1 em = 10px */
+
+.row1 {
+    width: 1000px;
+    height: 70px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: aquamarine;
+    text-transform: capitalize;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.row2 {
+    width: 1000px;
+    height: 70px;
+    background-color: rgb(43, 0, 255);
+}
+.row2c1 {
+    width: 200px;
+    height: 70px;
+    float: left;
+    color: whitesmoke;
+    
+}
