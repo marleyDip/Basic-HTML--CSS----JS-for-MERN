@@ -1,8 +1,7 @@
 /* Primitive */
 
-const { use } = require("react");
-
 /* Strings & Numbers */
+
 let num = 20;
 console.log(num);
 console.log(typeof num);
@@ -17,6 +16,7 @@ let cName = "DeepAkand!123@gmail.com";
 console.log(cName, typeof cName);
 
 /* Boolean */
+
 let s = true;
 console.log(s, typeof s);
 console.log(s + 5); // true = 1, false = 0
@@ -33,6 +33,7 @@ console.log(s ** "5"); // 1
 console.log(+"5" + s); // 6
 
 /* Null */
+
 let n = "";
 console.log(n, typeof n); // string // An empty string has both a legal value and a type.
 
@@ -40,15 +41,18 @@ let n1 = null;
 console.log(n1, typeof n1); // object // null means not 0...its means doesn't giving a value
 
 /* Undefined */
+
 let num1;
 console.log(num1, typeof num1); //undefined undefined // declare variable but not initialize
 
 /* Symbol */
+
 let uid = Symbol("123");
 let cid = Symbol("123");
 console.log(uid == cid); // check unique or not
 
 /* BigInt */
+
 let BigInt = 3847432847372876278532n;
 console.log(BigInt, typeof BigInt);
 
