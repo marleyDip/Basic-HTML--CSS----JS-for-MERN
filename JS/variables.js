@@ -74,5 +74,5 @@ console.log(d);
 /* Strings & Template Literals */
 
 let w = 10;
-let z = `welcome ${w} to Akand NextGen`;
+let z = `welcome ${w} to ${10 + 30} Akand NextGen`;
 console.log(z);
